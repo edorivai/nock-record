@@ -29,7 +29,7 @@ describe("#getGithubProfile", () => {
     // Optional; assert that all recorded fixtures have been called
     assertScopesFinished();
 
-    // Perform your own assertions
+    // Perform your own assertionsAllow
     expect(result).toMatchSnapshot();
   });
 });
@@ -79,6 +79,8 @@ Returned from a call to [`record`](#record)
 completeRecording | `() => void` | Tells Nock to complete the recording and write any fixtures
 assertScopesFinished | `() => void` | Asserts whether all recorded scopes have finish
 scopes | `Nock.Scope[]` | All Nock Scopes associated with this recording
+
+### Usage:
 
 ```ts
 const { completeRecording, assertScopesFinished } = await record("your-fixture-name");
