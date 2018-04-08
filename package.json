@@ -3,6 +3,7 @@
 	"description": "Small, Jest-aware wrapper around Nock Back, with improved ergonomics.",
   "version": "0.1.0",
   "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
 	"license": "MIT",
 	"homepage": "https://github.com/edorivai/jest-nock-record",
 	"repository": "github:edorivai/jest-nock-record",
