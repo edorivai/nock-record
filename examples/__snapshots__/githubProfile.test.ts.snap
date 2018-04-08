@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#getGithubProfile should retrieve user info 1`] = `
+Object {
+  "location": "Vienna",
+  "name": "Edo Rivai",
+  "url": "https://api.github.com/users/edorivai",
+}
+`;
