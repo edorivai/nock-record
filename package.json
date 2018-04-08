@@ -1,47 +1,47 @@
 {
-	"name": "jest-nock-record",
-	"description": "Small, Jest-aware wrapper around Nock Back, with improved ergonomics.",
-  "version": "0.1.0",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
-	"license": "MIT",
-	"homepage": "https://github.com/edorivai/jest-nock-record",
-	"repository": "github:edorivai/jest-nock-record",
-  "jest": {
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
-	},
-	"files": [
-		"lib"
-	],
-  "scripts": {
-		"build": "tsc",
-		"test-examples": "jest ./examples"
+ "name": "jest-nock-record",
+ "description": "Small, Jest-aware wrapper around Nock Back, with improved ergonomics.",
+ "version": "0.2.0",
+ "main": "lib/index.js",
+ "typings": "lib/index.d.ts",
+ "license": "MIT",
+ "homepage": "https://github.com/edorivai/jest-nock-record",
+ "repository": "github:edorivai/jest-nock-record",
+ "jest": {
+  "transform": {
+   "^.+\\.tsx?$": "ts-jest"
   },
-  "devDependencies": {
-    "@types/jest": "^22.2.2",
-    "@types/nock": "^9.1.2",
-    "@types/node": "^9.6.2",
-    "jest": "^22.4.3",
-    "superagent": "^3.8.2",
-    "ts-jest": "^22.4.2",
-    "ts-node": "^5.0.1",
-    "typescript": "^2.8.1"
-  },
-  "dependencies": {
-    "nock": "^9.2.3"
-	},
-	"peerDependencies": {
-		"jest": "^22.4.3"
-	}
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+  "moduleFileExtensions": [
+   "ts",
+   "tsx",
+   "js",
+   "jsx",
+   "json",
+   "node"
+  ]
+ },
+ "files": [
+  "lib"
+ ],
+ "scripts": {
+  "build": "tsc",
+  "test-examples": "jest ./examples"
+ },
+ "devDependencies": {
+  "@types/jest": "^22.2.2",
+  "@types/nock": "^9.1.2",
+  "@types/node": "^9.6.2",
+  "jest": "^22.4.3",
+  "superagent": "^3.8.2",
+  "ts-jest": "^22.4.2",
+  "ts-node": "^5.0.1",
+  "typescript": "^2.8.1"
+ },
+ "dependencies": {
+  "nock": "^9.2.3"
+ },
+ "peerDependencies": {
+  "jest": "^22.4.3"
+ }
 }
