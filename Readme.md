@@ -54,7 +54,7 @@ const record = setupRecorder({ mode: 'record' });
 option|default|description
 ---|---|---
 fixturePath|`{test-directory}/__nock-fixtures__`|The directory where fixtures will be stored
-mode|`record`|`"wild" | "dryrun" | "record" | "lockdown"` See [official docs](https://github.com/node-nock/nock#modes) for details
+mode|`record`|`"wild" \| "dryrun" \| "record" \| "lockdown"` See [official docs](https://github.com/node-nock/nock#modes) for details
 
 ## record
 
