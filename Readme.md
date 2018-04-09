@@ -19,7 +19,7 @@ const record = setupRecorder();
 describe("#getGithubProfile", () => {
   it("should retrieve user info", async () => {
     // Start recording, specify fixture name
-    const { completeRecording, assertScopesFinishejsond } = await record("github-edorivai");
+    const { completeRecording, assertScopesFinished } = await record("github-edorivai");
 
     // Run your function under test
     const result = await getGithubProfile("edorivai");
