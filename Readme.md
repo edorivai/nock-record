@@ -1,3 +1,5 @@
+# MOVED TO [`nock-record`](https://github.com/edorivai/nock-record)
+
 Small, Jest-aware wrapper around Nock Back, with improved ergonomics.
 
 # Workflow
@@ -29,7 +31,7 @@ describe("#getGithubProfile", () => {
     // Optional; assert that all recorded fixtures have been called
     assertScopesFinished();
 
-    // Perform your own assertionsAllow
+    // Perform your own assertions
     expect(result).toMatchSnapshot();
   });
 });
