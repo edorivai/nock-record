@@ -1,5 +1,5 @@
 import { getGithubProfile } from "./githubProfile";
-import { setupRecorder } from "../lib/index";
+import { setupRecorder } from "../src/index";
 
 const record = setupRecorder();
 

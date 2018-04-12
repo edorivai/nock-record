@@ -32,6 +32,7 @@
   "@types/jest": "^22.2.2",
   "@types/nock": "^9.1.2",
   "@types/node": "^9.6.2",
+  "@types/stack-trace": "^0.0.29",
   "jest": "^22.4.3",
   "superagent": "^3.8.2",
   "ts-jest": "^22.4.2",
@@ -39,7 +40,8 @@
   "typescript": "^2.8.1"
  },
  "dependencies": {
-  "nock": "^9.2.3"
+  "nock": "^9.2.3",
+  "stack-trace": "^0.0.10"
  },
  "peerDependencies": {
   "jest": "^22.4.3"
