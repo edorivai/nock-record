@@ -1,7 +1,7 @@
 {
   "name": "nock-record",
   "description": "Small wrapper around Nock Back, with improved ergonomics.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "license": "MIT",
