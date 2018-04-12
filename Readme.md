@@ -1,4 +1,6 @@
-# MOVED TO [`nock-record`](https://github.com/edorivai/nock-record)
+# MOVED TO nock-record
+
+This project has been moved to [nock-record](https://github.com/edorivai/nock-record)
 
 Small, Jest-aware wrapper around Nock Back, with improved ergonomics.
 
