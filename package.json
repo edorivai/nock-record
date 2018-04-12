@@ -1,12 +1,12 @@
 {
- "name": "jest-nock-record",
- "description": "Small, Jest-aware wrapper around Nock Back, with improved ergonomics.",
- "version": "0.2.3",
+ "name": "nock-record",
+ "description": "Small wrapper around Nock Back, with improved ergonomics.",
+ "version": "0.2.4",
  "main": "lib/index.js",
  "typings": "lib/index.d.ts",
  "license": "MIT",
- "homepage": "https://github.com/edorivai/jest-nock-record",
- "repository": "github:edorivai/jest-nock-record",
+ "homepage": "https://github.com/edorivai/nock-record",
+ "repository": "github:edorivai/nock-record",
  "jest": {
   "transform": {
    "^.+\\.tsx?$": "ts-jest"
@@ -42,8 +42,5 @@
  "dependencies": {
   "nock": "^9.2.3",
   "stack-trace": "^0.0.10"
- },
- "peerDependencies": {
-  "jest": "^22.4.3"
  }
 }

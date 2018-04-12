@@ -1,8 +1,4 @@
-# MOVED TO nock-record
-
-This project has been moved to [nock-record](https://github.com/edorivai/nock-record)
-
-Small, Jest-aware wrapper around Nock Back, with improved ergonomics.
+Small wrapper around Nock Back, with improved ergonomics.
 
 # Workflow
 
@@ -15,7 +11,7 @@ If you're familiar with Jest Snapshots, the following workflow should feel famil
 # Usage
 
 ```js
-import { setupRecorder } from "jest-nock-record";
+import { setupRecorder } from "nock-record";
 import { getGithubProfile } from "./githubProfile";
 
 const record = setupRecorder();

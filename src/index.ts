@@ -18,9 +18,11 @@ export interface Options {
 }
 
 function parentPath() {
-	const trace = stackTrace.get();
-	const currentFile = trace.shift()!.getFileName();
-	const parentFile = trace.find(t => t.getFileName() !== currentFile)!.getFileName();
+  const trace = stackTrace.get();
+  const currentFile = trace.shift()!.getFileName();
+  const parentFile = trace
+    .find(t => t.getFileName() !== currentFile)!
+    .getFileName();
   return dirname(parentFile);
 }
 
@@ -29,10 +31,8 @@ export function setupRecorder(options: Options = {}) {
   const fixturePath =
     options.fixturePath || join(parentPath(), "__nock-fixtures__");
 
-  beforeAll(() => {
-    nockBack.fixtures = fixturePath;
-    nockBack.setMode(options.mode || "record");
-  });
+  nockBack.fixtures = fixturePath;
+  nockBack.setMode(options.mode || "record");
 
   return (fixtureName: string, options: nock.NockBackOptions = {}) =>
     nockBack(`${fixtureName}.json`, options).then(({ nockDone, context }) => ({
