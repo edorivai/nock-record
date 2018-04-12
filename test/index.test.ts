@@ -20,3 +20,29 @@ describe("setupRecorder", () => {
     expect(nockBack.currentMode).toBe("dryrun");
   });
 });
+
+describe("record", () => {
+  const originalBack = nock.back;
+  const mockContext = {
+    assertScopesFinished: () => {}
+  };
+
+  afterEach(() => ((nock as any).back = originalBack));
+  it("should call nock.back", async () => {
+    const nockDone = () => {};
+    const nockOptions = {};
+    const backMock = jest.fn().mockReturnValueOnce(
+      Promise.resolve({
+        nockDone,
+        context: mockContext
+      })
+    );
+    (backMock as any).setMode = jest.fn();
+    (nock as any).back = backMock;
+
+    const record = setupRecorder();
+    const res = await record("my-fixture", nockOptions);
+    expect(res.completeRecording).toBe(nockDone);
+    expect(backMock).toBeCalledWith("my-fixture.json", nockOptions);
+  });
+});

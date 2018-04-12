@@ -25,8 +25,9 @@
   "lib"
  ],
  "scripts": {
-  "build": "tsc",
-  "test-examples": "jest ./examples"
+	"build": "tsc",
+	"test": "jest test",
+  "test-examples": "jest examples"
  },
  "devDependencies": {
   "@types/jest": "^22.2.2",
