@@ -15,7 +15,7 @@ If you're familiar with Jest Snapshots, the following workflow should feel famil
 2. Request + response are written to a file
 3. A `nock` will be created on subsequent test runs, based on the previous recording
 
-[![Usage gif](showcase.gif)]
+![Usage gif](showcase.gif)
 
 # Usage
 
