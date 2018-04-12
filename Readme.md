@@ -3,8 +3,8 @@ Small wrapper around Nock Back, with improved ergonomics.
 [![CircleCI](https://circleci.com/gh/edorivai/nock-record/tree/master.svg?style=svg&circle-token=e84f248ce8a4f263e4eab44af027f57681a26880)](https://circleci.com/gh/edorivai/nock-record/tree/master)
 
 
-:heavy_check_mark: Testing framework agnostic  
-:heavy_check_mark: Types included  
+:heavy_check_mark: Testing framework agnostic
+:heavy_check_mark: Types included
 :heavy_check_mark: Works with promises (so enables `async/await`)
 
 # Workflow
@@ -14,6 +14,8 @@ If you're familiar with Jest Snapshots, the following workflow should feel famil
 1. Record actual HTTP requests on first-time test run
 2. Request + response are written to a file
 3. A `nock` will be created on subsequent test runs, based on the previous recording
+
+[![Usage gif](showcase.gif)]
 
 # Usage
 
