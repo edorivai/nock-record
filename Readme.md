@@ -3,8 +3,8 @@ Small wrapper around Nock Back, with improved ergonomics.
 [![CircleCI](https://circleci.com/gh/edorivai/nock-record/tree/master.svg?style=svg&circle-token=e84f248ce8a4f263e4eab44af027f57681a26880)](https://circleci.com/gh/edorivai/nock-record/tree/master)
 
 
-:heavy_check_mark: Testing framework agnostic
-:heavy_check_mark: Types included
+:heavy_check_mark: Testing framework agnostic\
+:heavy_check_mark: Types included\
 :heavy_check_mark: Works with promises (so enables `async/await`)
 
 # Workflow
