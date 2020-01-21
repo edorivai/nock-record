@@ -14,7 +14,7 @@ export interface Options {
    * - record: use recorded nocks, record new nocks
    * - lockdown: use recorded nocks, disables all http calls even when not nocked, doesn't record
    **/
-  mode?: nock.NockBackMode;
+  mode?: nock.BackMode;
 }
 
 function parentPath() {
@@ -27,31 +27,17 @@ function parentPath() {
 }
 
 export function setupRecorder(options: Options = {}) {
-  const nockBack: nock.NockBack & NockBack = nock.back as any;
+  const nockBack: nock.Back = nock.back as any;
   const fixturePath =
     options.fixturePath || join(parentPath(), "__nock-fixtures__");
 
   nockBack.fixtures = fixturePath;
   nockBack.setMode(options.mode || "record");
 
-  return (fixtureName: string, options: nock.NockBackOptions = {}) =>
+  return (fixtureName: string, options: nock.BackOptions = {}) =>
     nockBack(`${fixtureName}.json`, options).then(({ nockDone, context }) => ({
       completeRecording: nockDone,
       ...context,
       assertScopesFinished: context.assertScopesFinished.bind(context)
     }));
-}
-
-// Remove below types when https://github.com/DefinitelyTyped/DefinitelyTyped/pull/24808 gets merged
-interface NockBack {
-  (fixtureName: string, options?: nock.NockBackOptions): Promise<{
-    nockDone: () => void;
-    context: NockBackContext;
-  }>;
-}
-
-export interface NockBackContext {
-  scopes: nock.Scope[];
-  assertScopesFinished(): void;
-  isLoaded: boolean;
 }
