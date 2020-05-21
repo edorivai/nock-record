@@ -52,8 +52,10 @@
     "ts-node": "^5.0.1",
     "typescript": "^3.7.5"
   },
+  "peerDependencies": {
+    "nock": "11.x"
+  },
   "dependencies": {
-    "nock": "^11.7.2",
     "stack-trace": "^0.0.10"
   }
 }
