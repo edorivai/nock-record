@@ -17,6 +17,18 @@ If you're familiar with Jest Snapshots, the following workflow should feel famil
 
 ![Usage gif](showcase.gif)
 
+# Installation
+
+Make sure to install `nock` as well, as it's defined as a peer-dependency:
+
+```bash
+# yarn
+yarn add nock-record nock -D
+
+# npm
+npm install nock-record nock -D
+```
+
 # Usage
 
 ```js
