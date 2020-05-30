@@ -23,7 +23,8 @@ function parentPath() {
   const parentFile = trace
     .find(t => t.getFileName() !== currentFile)!
     .getFileName();
-  return dirname(parentFile);
+  const path = dirname(parentFile);
+  return path.replace(/^file:\/\//, '') // Remove file:// from protocol on linux
 }
 
 export function setupRecorder(options: Options = {}) {
