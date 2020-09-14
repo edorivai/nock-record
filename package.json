@@ -43,7 +43,7 @@
     "@types/stack-trace": "^0.0.29",
     "@types/superagent": "^4.1.4",
     "husky": "^4.3.0",
-    "jest": "^24.9.0",
+    "jest": "^26.4.2",
     "lint-staged": "^8.2.1",
     "prettier": "^1.19.1",
     "superagent": "^3.8.3",
