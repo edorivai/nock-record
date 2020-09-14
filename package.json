@@ -32,8 +32,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "prettier --parser typescript --write",
-      "git add"
+      "prettier --parser typescript --write"
     ]
   },
   "devDependencies": {
@@ -44,7 +43,7 @@
     "@types/superagent": "^4.1.4",
     "husky": "^4.3.0",
     "jest": "^26.4.2",
-    "lint-staged": "^8.2.1",
+    "lint-staged": "^10.3.0",
     "prettier": "^1.19.1",
     "superagent": "^3.8.3",
     "ts-jest": "^26.0.0",
