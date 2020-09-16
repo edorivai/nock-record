@@ -1,18 +1,18 @@
-import { getGithubProfile } from './githubProfile';
-import { setupRecorder } from '../src/';
+import { getGithubProfile } from "./githubProfile";
+import { setupRecorder } from "../src/";
 
 const record = setupRecorder();
 
-describe('#getGithubProfile', () => {
-    it('should retrieve user info', async () => {
-        const { completeRecording, assertScopesFinished } = await record(
-            'github-edorivai'
-        );
-        const result = await getGithubProfile('edorivai');
+describe("#getGithubProfile", () => {
+  it("should retrieve user info", async () => {
+    const { completeRecording, assertScopesFinished } = await record(
+      "github-edorivai"
+    );
+    const result = await getGithubProfile("edorivai");
 
-        completeRecording();
-        assertScopesFinished();
+    completeRecording();
+    assertScopesFinished();
 
-        expect(result).toMatchSnapshot();
-    });
+    expect(result).toMatchSnapshot();
+  });
 });
