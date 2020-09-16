@@ -51,7 +51,7 @@
     "typescript": "^4.0.2"
   },
   "peerDependencies": {
-    "nock": ">=11.0.0"
+    "nock": "11 - 13"
   },
   "dependencies": {
     "stack-trace": "^0.0.10"
